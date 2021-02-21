@@ -4,6 +4,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiProperty;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -42,15 +43,29 @@ class UserEskap
     */
     public ?string $lastname = null;
 
-    /** @var Integer[] id of eskap done by this User. 
+    /** @var String[] id of eskap done by this User. 
      * 
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="simple_array")
+     * @ApiProperty(
+     *     attributes={
+     *         "jsonld_context"={
+     *             "@type"="http://www.w3.org/2001/XMLSchema#array",
+     *         }
+     *     }
+     * )
     */
     public iterable $donelist;
 
-    /** @var Integer[] id of fav eskap of this User.  
+    /** @var String[] id of fav eskap of this User.  
      * 
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="simple_array")
+     * @ApiProperty(
+     *     attributes={
+     *         "jsonld_context"={
+     *             "@type"="http://www.w3.org/2001/XMLSchema#array",
+     *         }
+     *     }
+     * )
     */
     public iterable $favlist;
 

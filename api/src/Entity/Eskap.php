@@ -4,6 +4,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiProperty;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -120,7 +121,14 @@ class Eskap
 
     /** @var String[] Available themes for this eskap. 
      * 
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="simple_array")
+     * @ApiProperty(
+     *     attributes={
+     *         "jsonld_context"={
+     *             "@type"="http://www.w3.org/2001/XMLSchema#array",
+     *         }
+     *     }
+     * )
     */
     public iterable $themes;
 
