@@ -23,9 +23,9 @@ class Review
 
     /** The id of the user. 
      * 
-     * @ORM\Column
+     * @ORM\ManyToOne(targetEntity="UserEskap")
     */
-    public ?string $userid = null;
+    public ?UserEskap $user = null;
 
     /** The text of the review. 
      * 
