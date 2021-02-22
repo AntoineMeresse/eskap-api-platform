@@ -16,25 +16,55 @@ Project of : Antoine Méresse & Imad Abdelmouine
 
 ### Eskap
 
-![API-Eskap](screenshots/eskap.png "API")
+![API-Eskap](screenshots/eskap.png "API eskap")
 
 ### Review
 
-![API-Review](screenshots/review.png "API")
+![API-Review](screenshots/review.png "API review")
 
 ### UserEskap
 
-![API-UserEskap](screenshots/usereskap.png "API")
+![API-UserEskap](screenshots/usereskap.png "API usereskap")
 
 # Admin
 
+Backend for admins to manage datas (create, delete, read)
+
 - url : `https://localhost/admin/`
 
-# Problems
+## Eskap
 
-- We have sometimes a problem to access admin with https. We can only use http.
-- At the moment, we can't edit entities that contains a field of type `simple_array` in the admin path
+![ADMIN-Eskap](screenshots/admin-eskap.png "ADMIN eskap")
+
+## Review
+
+![ADMIN-Review](screenshots/admin-review.png "ADMIN review")
+
+## UserEskap
+
+![ADMIN-UserEskap](screenshots/admin-usereskap.png "ADMIN usereskap")
+
+# Admin Manage Datas
+
+From the admin area, we can manage datas. We'll see an example with reviews but it's also available for eskap and UserEskap.
+
+## READ Datas (Review Example)
+
+![ADMIN-Show](screenshots/admin-read.png "ADMIN review read")
+
+## Edit Datas (Review Example)
+
+One of the problem we have, we can't edit entities from admin.
+Save button isn't clickable.
+
+From there, you can also delete the element.
+
+![ADMIN-Show](screenshots/admin-edit.png "ADMIN review edit")
+
+## Create Datas (Review Example)
+
+![ADMIN-Show](screenshots/admin-edit.png "ADMIN review create")
 
 ## API PLATFORM INFOS
 
-Created by [Kévin Dunglas](https://dunglas.fr). Commercial support available at [Les-Tilleuls.coop](https://les-tilleuls.coop).
+If you want to check API platform : https://api-platform.com/
