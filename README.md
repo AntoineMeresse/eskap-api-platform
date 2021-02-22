@@ -63,7 +63,7 @@ From there, you can also delete the element.
 
 ## Create Datas (Review Example)
 
-![ADMIN-Show](screenshots/admin-edit.png "ADMIN review create")
+![ADMIN-Show](screenshots/admin-create.png "ADMIN review create")
 
 ## API PLATFORM INFOS
 
